@@ -1,3 +1,6 @@
+import frappe
+from frappe import _
+
 @frappe.whitelist()
 def get_quotation_template(name):
 
