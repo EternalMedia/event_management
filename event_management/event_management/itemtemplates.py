@@ -18,3 +18,12 @@ def get_salesorder_template(name):
     except Exception as e:
         doc = None
     return doc 
+
+@frappe.whitelist()
+def get_picklist_template(name):
+
+    try:
+        doc = frappe.get_doc('Pick List Template', name)
+    except Exception as e:
+        doc = None
+    return doc 
